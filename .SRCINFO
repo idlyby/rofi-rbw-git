@@ -13,6 +13,7 @@ pkgbase = rofi-rbw-git
 	depends = python-configargparse
 	optdepends = rofi: rofi frontend
 	optdepends = wofi: wofi frontend
+	optdepends = libnotify: for totp copy notifications
 	optdepends = xdotool: for autofill on X11
 	optdepends = wtype: for autofill on Wayland
 	optdepends = ydotool: for autofill on Wayland

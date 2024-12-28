@@ -12,6 +12,7 @@ makedepends=('git' 'python-pip')
 depends=('rbw' 'python' 'python-configargparse')
 optdepends=('rofi: rofi frontend' 
             'wofi: wofi frontend'
+            'libnotify: for totp copy notifications'
             'xdotool: for autofill on X11'
             'wtype: for autofill on Wayland'
             'ydotool: for autofill on Wayland'
