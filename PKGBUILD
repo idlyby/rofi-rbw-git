@@ -2,7 +2,7 @@
 
 _pkgname='rofi-rbw'
 pkgname="${_pkgname}-git"
-pkgver=1.2.0.r3.gce65e72
+pkgver=1.4.2.r3.g03630d0
 pkgrel=1
 pkgdesc='Rofi frontend for Bitwarden'
 arch=('x86_64')
