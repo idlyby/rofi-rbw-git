@@ -2,11 +2,11 @@
 
 _pkgname='rofi-rbw'
 pkgname="${_pkgname}-git"
-pkgver=1.4.2.r3.g03630d0
+pkgver=968a4e2
 pkgrel=1
 pkgdesc='Rofi frontend for Bitwarden'
 arch=('x86_64')
-url='https://github.com/idlyby/rofi-rbw.git#branch=fuzzel'
+url='https://github.com/idlyby/rofi-rbw'
 license=('MIT')
 makedepends=('git' 'python-pip')
 depends=('rbw' 'python' 'python-configargparse')
@@ -23,12 +23,12 @@ optdepends=('rofi: rofi frontend'
             'wl-clipboard: for copying passwords to clipboard on Wayland')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=("git+${url}.git")
+source=("git+${url}.git#branch=fuzzel")
 sha256sums=('SKIP')
 install="${pkgname}.install"
 
 pkgver() {
-  git -C "${_pkgname}" describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+  git -C "${srcdir}/${_pkgname}" describe --long --tags --always | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 package() {
