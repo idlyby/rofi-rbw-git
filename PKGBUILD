@@ -6,12 +6,13 @@ pkgver=1.4.2.r3.g03630d0
 pkgrel=1
 pkgdesc='Rofi frontend for Bitwarden'
 arch=('x86_64')
-url='https://github.com/fdw/rofi-rbw'
+url='https://github.com/idlyby/rofi-rbw.git#branch=fuzzel'
 license=('MIT')
 makedepends=('git' 'python-pip')
 depends=('rbw' 'python' 'python-configargparse')
 optdepends=('rofi: rofi frontend' 
             'wofi: wofi frontend'
+            'fuzzel: fuzzel frontend'
             'libnotify: for totp copy notifications'
             'xdotool: for autofill on X11'
             'wtype: for autofill on Wayland'
